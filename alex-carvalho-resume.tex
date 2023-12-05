@@ -20,10 +20,11 @@
 }
 
 \usepackage{changepage}
-\usepackage[sfdefault]{arimo}
 \usepackage[T1]{fontenc}
+\usepackage{helvet}
 \usepackage{enumitem}
 
+\renewcommand\familydefault{\sfdefault}
 
 \begin{document}
 \color{regtextgray}
@@ -34,6 +35,8 @@
 
 \begin{center}
 	\textcolor{imptextblack}{\textbf{\Huge Alexander Carvalho}}
+
+	\vspace{5pt}	
 
 	\begin{tabular}{ c c c c c c }
 		\textcolor{imptextblack}{(905) 600 2026} & 
@@ -54,15 +57,15 @@
 % Education
 % ----------------------------------------------------
 
-\begin{adjustwidth}{4pt}{4pt} \large EDUCATION \end{adjustwidth}
+\begin{adjustwidth}{4pt}{4pt} \large \textrm{EDUCATION} \end{adjustwidth}
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{10pt}{10pt}
-	\vspace{-10pt}	
+	\vspace{-5pt}	
 
-	\textcolor{imptextblack}{\textbf{\large Bachelor of Computer Science (Co-op) — BCS}} \hfill Expected Graduation: April 2025
+	\textcolor{imptextblack}{\textbf{\large Bachelor of Computer Science (co-op) — BCS}} \hfill Expected Graduation: April 2025
 	
-	Sheridan College $|$ GPA: 3.76
+	Sheridan College $|$ {\small GPA: 3.76}
 	
 	\begin{tabular}{ r l }
 	 	\textcolor{imptextblack}{Relevant Coursework} & Data Structures \& Algorithms, C/C++ Program Design, Distributed \& Parallel Computing \\ 
@@ -78,23 +81,23 @@
 % ----------------------------------------------------
 \vspace{5pt}
 
-\begin{adjustwidth}{4pt}{4pt} \large PROFESSIONAL EXPERIENCE \end{adjustwidth}
+\begin{adjustwidth}{4pt}{4pt} \large \textrm{PROFESSIONAL EXPERIENCE} \end{adjustwidth}
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{10pt}{10pt}
-	\vspace{-10pt}
+	\vspace{-5pt}
 
 	\textcolor{imptextblack}{\textbf{\large Geotab — Software Developer Intern}} \hfill Sep 2023 — Dec 2023
 	
 	Full stack web development in the Citizens Insights codebase
 	
-	\begin{itemize}[topsep=0pt]
+	\begin{itemize}[topsep=0pt, labelsep=10pt, leftmargin=24pt, label=\textcolor{imptextblack}{\textbullet}]
 	  	\item Facilitated integration and testing of web mapping features within various container registry pipelines
 		\item Reduced API response times by \textcolor{imptextblack}{50\%} with parallel task processing for vehicle location and route retrieval
 		\item Optimized client-side data fetching during geospatial queries with web workers; improved site initialization performance \\
-			by \textcolor{imptextblack}{70\% (4800 ms → 1400 ms)} and decreased bounce rates by \textcolor{imptextblack}{25\%} 
+			by \textcolor{imptextblack}{70\% ({\small 4800 ms → 1400 ms})} and decreased bounce rates by \textcolor{imptextblack}{25\%} 
 		\item Utilized Jest to build unit tests for numerous UI components exceeding \textcolor{imptextblack}{90\%} repository-wide coverage
-		\item Learned about \textcolor{imptextblack}{asynchronous} web applications (TypeScript, RxJS, Redux, Multithreading, Event Handling)
+		\item Learned about \textcolor{imptextblack}{asynchronous} web applications ({\small TypeScript, RxJS, Redux, Multithreading, Event Handling})
 	\end{itemize}
 	
 	\vspace{5pt}
@@ -102,13 +105,13 @@
 	
 	Computational Fluid Dynamics R\&D Engineering in the Ansys monorepo
 	
-	\begin{itemize}[topsep=0pt]
+	\begin{itemize}[topsep=0pt, labelsep=10pt, leftmargin=24pt, label=\textcolor{imptextblack}{\textbullet}]
 		\item Supported implementation, testing, and release of various simulation-based features across \textcolor{imptextblack}{5} Ansys repositories
 		\item Accelerated microservice deployments by \textcolor{imptextblack}{30\%} through refactoring batch scripts, Dockerfiles, and CI workflows
-		\item Spearheaded the development and launch of \href{https://github.com/ansys/pyansys-units}{ansys/pyansys-units} (\textcolor{imptextblack}{400+} weekly downloads) a Python package for units, \\
+		\item Spearheaded the development and launch of \href{https://github.com/ansys/pyansys-units}{ansys/pyansys-units} ({\small \textcolor{imptextblack}{400+} weekly downloads}) a Python package for units, \\
 			unit systems, and unit conversions; enhanced community adoption by \textcolor{imptextblack}{15\%}
-		\item Achieved a \textcolor{imptextblack}{40\%} reduction setup and teardown overhead by integrating Pytest fixtures within module tests
-		\item Learned about \textcolor{imptextblack}{trunk-based} development (Python, Pytest, Docker, CI/CD, GitHub Actions)
+		\item Achieved a \textcolor{imptextblack}{40\%} reduction in setup and teardown overhead by integrating Pytest fixtures within module tests
+		\item Learned about \textcolor{imptextblack}{trunk-based} development ({\small Python, Pytest, Docker, CI/CD, GitHub Actions})
 	\end{itemize}
 \end{adjustwidth}
 
@@ -117,17 +120,17 @@
 % ----------------------------------------------------
 \vspace{5pt}
 
-\begin{adjustwidth}{4pt}{4pt} \large OTHER EXPERIENCE \end{adjustwidth}
+\begin{adjustwidth}{4pt}{4pt} \large \textrm{OTHER EXPERIENCE} \end{adjustwidth}
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{10pt}{10pt}
-	\vspace{-10pt}
+	\vspace{-5pt}
 
-	\textcolor{imptextblack}{\textbf{\large Sheridan CMI Lab / USARs Data Processing — Undergraduate Research Developer}} \hfill Jan 2023 — Aug 2023
+	\textcolor{imptextblack}{\textbf{\large Sheridan CMI Lab — Undergraduate Research Developer}} \hfill Jan 2023 — Aug 2023
 	
 	Machine learning analysis of road surface conditions
 	
-	\begin{itemize}[topsep=0pt]
+	\begin{itemize}[topsep=0pt, labelsep=10pt, leftmargin=24pt, label=\textcolor{imptextblack}{\textbullet}]
 		\item Collaborated on \href{https://github.com/Lynx-Data-Processing}{LYNX} Computer Vision, analyzing road conditions via dashcam using Python, OpenCV, and YOLOv5
 		\item Built an interface to demo road debris detection using TypeScript, SvelteKit, and Express
 	\end{itemize}
@@ -137,7 +140,7 @@
 	
 	Operations at YYZ2
 	
-	\begin{itemize}[topsep=0pt]
+	\begin{itemize}[topsep=0pt, labelsep=10pt, leftmargin=24pt, label=\textcolor{imptextblack}{\textbullet}]
 		\item Led a team of \textcolor{imptextblack}{25} associates, implementing optimal performance strategies to achieve daily shipment targets
 	\end{itemize}
 \end{adjustwidth}
@@ -148,17 +151,17 @@
 % ----------------------------------------------------
 \vspace{5pt}
 
-\begin{adjustwidth}{4pt}{4pt} \large SKILLS \end{adjustwidth}
+\begin{adjustwidth}{4pt}{4pt} \large \textrm{SKILLS} \end{adjustwidth}
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{10pt}{10pt}
-	\vspace{-5pt}
+	\vspace{-4pt}
 
 	\begin{tabular}{ r l }
-	 	\textcolor{imptextblack}{Programming Languages} & Python, JavaScript, TypeScript, Ruby, C, C++, \LaTeX \\ 
+	 	\textcolor{imptextblack}{Programming Languages} & Python, JavaScript, TypeScript, Ruby, C, C++, \textrm{\LaTeX} \\ 
 	 	\textcolor{imptextblack}{Frameworks \& Tools} & React, Next, Node, Express, GraphQL, Jest, Rails, FastAPI, Pytest \\  
-	 	\textcolor{imptextblack}{Datastores} & AWS (S3, RDS, DynamoDB), MySQL, MongoDB, Hadoop (HDFS, MapReduce) \\  
-	 	\textcolor{imptextblack}{DevOps} & Docker, Git, GitHub, AWS (EC2, Lambda, VPC), CI/CD, Bash \\  
+	 	\textcolor{imptextblack}{Datastores} & AWS ({\small S3, RDS, DynamoDB}), MySQL, MongoDB, Hadoop ({\small HDFS, MapReduce}) \\  
+	 	\textcolor{imptextblack}{DevOps} & Docker, Git, GitHub, AWS ({\small EC2, Lambda, VPC}), CI/CD, Bash \\  
 	\end{tabular}
 \end{adjustwidth}
 
@@ -167,17 +170,17 @@
 % ----------------------------------------------------
 \vspace{5pt}
 
-\begin{adjustwidth}{4pt}{4pt} \large PROJECTS \& OPEN-SOURCE \end{adjustwidth}
+\begin{adjustwidth}{4pt}{4pt} \large \textrm{PROJECTS \& OPEN-SOURCE} \end{adjustwidth}
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{10pt}{10pt}
-	\vspace{-10pt}
+	\vspace{-5pt}
 
 	\textcolor{imptextblack}{\textbf{\large Wealthsimple / llm-gateway}} \hfill \href{https://github.com/wealthsimple/llm-gateway}{github.com/wealthsimple/llm-gateway}
 	
 	Python, FastAPI, TypeScript, React, Docker, OpenAI
 	
-	\begin{itemize}[topsep=0pt]
+	\begin{itemize}[topsep=0pt, labelsep=10pt, leftmargin=24pt, label=\textcolor{imptextblack}{\textbullet}]
 		\item Contributed router-based \href{https://github.com/wealthsimple/llm-gateway/pull/27}{exception handlers} to propagate API errors within the backend and UI intuitively
 	\end{itemize}
 	
@@ -186,7 +189,7 @@
 	
 	TypeScript, React, Node, GraphQL, Express, MongoDB, Docker, HTML, TailwindCSS
 	
-	\begin{itemize}[topsep=0pt]
+	\begin{itemize}[topsep=0pt, labelsep=10pt, leftmargin=24pt, label=\textcolor{imptextblack}{\textbullet}]
 		\item Developed a full stack finance website to buy, sell, and trade tranches; utilized \textcolor{imptextblack}{GraphQL} to streamline API queries
 	\end{itemize}
 	
@@ -195,7 +198,7 @@
 	
 	Python, FastAPI, Keras, NumPy, Pandas, Pytest, yFinance
 	
-	\begin{itemize}[topsep=0pt]
+	\begin{itemize}[topsep=0pt, labelsep=10pt, leftmargin=24pt, label=\textcolor{imptextblack}{\textbullet}]
 		\item Built a REST API for stock price estimates; integrated a process \textcolor{imptextblack}{queue} to ensure concurrent request integrity
 	\end{itemize}
 \end{adjustwidth}
