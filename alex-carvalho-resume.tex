@@ -10,6 +10,8 @@
 
 \usepackage[dvipsnames]{xcolor}
 \definecolor{linkblue}{RGB}{60, 120, 216}
+\definecolor{regtextgray}{RGB}{102, 102, 102}
+\definecolor{imptextblack}{RGB}{0, 0, 0}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -20,24 +22,26 @@
 \usepackage{changepage}
 \usepackage[sfdefault]{arimo}
 \usepackage[T1]{fontenc}
+\usepackage{enumitem}
 
 
 \begin{document}
+\color{regtextgray}
 
 % ----------------------------------------------------
 % Summary
 % ----------------------------------------------------
 
 \begin{center}
-	\textbf{\Huge Alexander Carvalho}
+	{\Huge \textcolor{imptextblack}{Alexander Carvalho}}
 
 	\begin{tabular}{ c c c c c c }
-		(905) 600 2026 & 
+		\textcolor{imptextblack}{(905) 600 2026} & 
 		\href{mailto:alexcarvalho@alvx.ca}{alexcarvalho@alvx.ca} & 
 		\href{alvx.ca}{alvx.ca} & 
 		\href{https://www.linkedin.com/in/alvx}{linkedin.com/in/alvx} & 
 		\href{https://www.github.com/alvxck}{github.com/alvxck} & 
-		Mississauga, ON
+		\textcolor{imptextblack}{Mississauga, ON}
 	\end{tabular}
 
 	\vspace{5pt}	
@@ -54,13 +58,15 @@
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{14pt}{14pt}
-	Bachelor of Computer Science (Co-op) — BCS \hfill Expected Graduation: April 2025
+	\vspace{-10pt}	
+
+	\textcolor{imptextblack}{Bachelor of Computer Science (Co-op) — BCS} \hfill Expected Graduation: April 2025
 	
 	Sheridan College \hfill GPA: 3.76
 	
 	\begin{tabular}{ r l }
-	 	Relevant Coursework & Data Structures \& Algorithms, C/C++ Program Design, Distributed \& Parallel Computing \\ 
-		Extra-curricular & President of Sheridan \href{https://sheridancollege.campuslabs.ca/engage/organization/mobilecomputingclub}{Computer Science Club} \\
+	 	\textcolor{imptextblack}{Relevant Coursework} & Data Structures \& Algorithms, C/C++ Program Design, Distributed \& Parallel Computing \\ 
+		\textcolor{imptextblack}{Extra-curricular} & President of Sheridan \href{https://sheridancollege.campuslabs.ca/engage/organization/mobilecomputingclub}{Computer Science Club} \\
 	\end{tabular}
 \end{adjustwidth}
 
@@ -70,61 +76,69 @@
 % ----------------------------------------------------
 % Professional Experience
 % ----------------------------------------------------
+\vspace{5pt}
 
 \begin{adjustwidth}{4pt}{4pt} PROFESSIONAL EXPERIENCE \end{adjustwidth}
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{14pt}{14pt}
-	Geotab — Software Developer Intern \hfill Sep 2023 — Dec 2023
+	\vspace{-10pt}
+
+	\textcolor{imptextblack}{Geotab — Software Developer Intern} \hfill Sep 2023 — Dec 2023
 	
 	Full stack web development in the Citizens Insights codebase
 	
-	\begin{itemize}
+	\begin{itemize}[topsep=0pt]
 	  	\item Facilitated integration and testing of web mapping features within various container registry pipelines
-		\item Reduced API response times by 50\% with parallel task processing for vehicle location and route retrieval
+		\item Reduced API response times by \textcolor{imptextblack}{50\%} with parallel task processing for vehicle location and route retrieval
 		\item Optimized client-side data fetching during geospatial queries with web workers; improved site initialization performance \\
-			by 70\% (4800 ms → 1400 ms) and decreased bounce rates by 25\% 
-		\item Utilized Jest to build unit tests for numerous UI components exceeding 90\% repository-wide coverage
-		\item Learned about asynchronous web applications (TypeScript, RxJS, Redux, Multithreading, Event Handling)
+			by \textcolor{imptextblack}{70\% (4800 ms → 1400 ms)} and decreased bounce rates by \textcolor{imptextblack}{25\%} 
+		\item Utilized Jest to build unit tests for numerous UI components exceeding \textcolor{imptextblack}{90\%} repository-wide coverage
+		\item Learned about \textcolor{imptextblack}{asynchronous} web applications (TypeScript, RxJS, Redux, Multithreading, Event Handling)
 	\end{itemize}
 	
-	Ansys — Software Engineer Intern \hfill May 2023 — Aug 2023
+	\vspace{5pt}
+	\textcolor{imptextblack}{Ansys — Software Engineer Intern} \hfill May 2023 — Aug 2023
 	
 	Computational Fluid Dynamics R\&D Engineering in the Ansys monorepo
 	
-	\begin{itemize}
-		\item Supported implementation, testing, and release of various simulation-based features across 5 Ansys repositories
-		\item Accelerated microservice deployments by 30\% through refactoring batch scripts, Dockerfiles, and CI workflows
-		\item Spearheaded the development and launch of \href{https://github.com/ansys/pyansys-units}{ansys/pyansys-units} (400+ weekly downloads) a Python package for units, \\
-			unit systems, and unit conversions; enhanced community adoption by 15\%
-		\item Achieved a 40\% reduction setup and teardown overhead by integrating Pytest fixtures within module tests
-		\item Learned about trunk-based development (Python, Pytest, Docker, CI/CD, GitHub Actions)
+	\begin{itemize}[topsep=0pt]
+		\item Supported implementation, testing, and release of various simulation-based features across \textcolor{imptextblack}{5} Ansys repositories
+		\item Accelerated microservice deployments by \textcolor{imptextblack}{30\%} through refactoring batch scripts, Dockerfiles, and CI workflows
+		\item Spearheaded the development and launch of \href{https://github.com/ansys/pyansys-units}{ansys/pyansys-units} (\textcolor{imptextblack}{400+} weekly downloads) a Python package for units, \\
+			unit systems, and unit conversions; enhanced community adoption by \textcolor{imptextblack}{15\%}
+		\item Achieved a \textcolor{imptextblack}{40\%} reduction setup and teardown overhead by integrating Pytest fixtures within module tests
+		\item Learned about \textcolor{imptextblack}{trunk-based} development (Python, Pytest, Docker, CI/CD, GitHub Actions)
 	\end{itemize}
 \end{adjustwidth}
 
 % ----------------------------------------------------
 % Other Experience
 % ----------------------------------------------------
+\vspace{5pt}
 
 \begin{adjustwidth}{4pt}{4pt} OTHER EXPERIENCE \end{adjustwidth}
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{14pt}{14pt}
-	Sheridan CMI Lab / USARs Data Processing — Undergraduate Research Developer \hfill Jan 2023 — Aug 2023
+	\vspace{-10pt}
+
+	\textcolor{imptextblack}{Sheridan CMI Lab / USARs Data Processing — Undergraduate Research Developer} \hfill Jan 2023 — Aug 2023
 	
 	Machine learning analysis of road surface conditions
 	
-	\begin{itemize}
+	\begin{itemize}[topsep=0pt]
 		\item Collaborated on \href{https://github.com/Lynx-Data-Processing}{LYNX} Computer Vision, analyzing road conditions via dashcam using Python, OpenCV, and YOLOv5
 		\item Built an interface to demo road debris detection using TypeScript, SvelteKit, and Express
 	\end{itemize}
 	
-	Amazon — L1 Operations \hfill Feb 2020 — Jan 2023
+	\vspace{5pt}
+	\textcolor{imptextblack}{Amazon — L1 Operations} \hfill Feb 2020 — Jan 2023
 	
 	Operations at YYZ2
 	
-	\begin{itemize}
-		\item Led a team of 25 associates, implementing optimal performance strategies to achieve daily shipment targets
+	\begin{itemize}[topsep=0pt]
+		\item Led a team of \textcolor{imptextblack}{25} associates, implementing optimal performance strategies to achieve daily shipment targets
 	\end{itemize}
 \end{adjustwidth}
 
@@ -132,49 +146,57 @@
 % ----------------------------------------------------
 % Skills
 % ----------------------------------------------------
+\vspace{5pt}
 
 \begin{adjustwidth}{4pt}{4pt} SKILLS \end{adjustwidth}
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{14pt}{14pt}
+	\vspace{-5pt}
+
 	\begin{tabular}{ r l }
-	 	Programming Languages & Python, JavaScript, TypeScript, Ruby, C, C++, \LaTeX \\ 
-	 	Frameworks \& Tools & React, Next, Node, Express, GraphQL, Jest, Rails, FastAPI, Pytest \\  
-	 	Datastores & AWS (S3, RDS, DynamoDB), MySQL, MongoDB, Hadoop (HDFS, MapReduce) \\  
-	 	DevOps & Docker, Git, GitHub, AWS (EC2, Lambda, VPC), CI/CD, Bash \\  
+	 	\textcolor{imptextblack}{Programming Languages} & Python, JavaScript, TypeScript, Ruby, C, C++, \LaTeX \\ 
+	 	\textcolor{imptextblack}{Frameworks \& Tools} & React, Next, Node, Express, GraphQL, Jest, Rails, FastAPI, Pytest \\  
+	 	\textcolor{imptextblack}{Datastores} & AWS (S3, RDS, DynamoDB), MySQL, MongoDB, Hadoop (HDFS, MapReduce) \\  
+	 	\textcolor{imptextblack}{DevOps} & Docker, Git, GitHub, AWS (EC2, Lambda, VPC), CI/CD, Bash \\  
 	\end{tabular}
 \end{adjustwidth}
 
 % ----------------------------------------------------
 % Projects & Open-Source
 % ----------------------------------------------------
+\vspace{5pt}
 
 \begin{adjustwidth}{4pt}{4pt} PROJECTS \& OPEN-SOURCE \end{adjustwidth}
 \rule[8pt]{\linewidth}{0.4pt}
 
 \begin{adjustwidth}{14pt}{14pt}
-	Wealthsimple / llm-gateway \hfill \href{https://github.com/wealthsimple/llm-gateway}{github.com/wealthsimple/llm-gateway}
+	\vspace{-10pt}
+
+	\textcolor{imptextblack}{Wealthsimple / llm-gateway} \hfill \href{https://github.com/wealthsimple/llm-gateway}{github.com/wealthsimple/llm-gateway}
 	
 	Python, FastAPI, TypeScript, React, Docker, OpenAI
 	
-	\begin{itemize}
+	\begin{itemize}[topsep=0pt]
 		\item Contributed router-based \href{https://github.com/wealthsimple/llm-gateway/pull/27}{exception handlers} to propagate API errors within the backend and UI intuitively
 	\end{itemize}
 	
-	Tranche Commerce \hfill \href{https://github.com/alvxck/tranche-commerce}{github.com/alvxck/tranche-commerce}
+	\vspace{5pt}
+	\textcolor{imptextblack}{Tranche Commerce} \hfill \href{https://github.com/alvxck/tranche-commerce}{github.com/alvxck/tranche-commerce}
 	
 	TypeScript, React, Node, GraphQL, Express, MongoDB, Docker, HTML, TailwindCSS
 	
-	\begin{itemize}
-		\item Developed a full stack finance website to buy, sell, and trade tranches; utilized GraphQL to streamline API queries
+	\begin{itemize}[topsep=0pt]
+		\item Developed a full stack finance website to buy, sell, and trade tranches; utilized \textcolor{imptextblack}{GraphQL} to streamline API queries
 	\end{itemize}
 	
-	Stock Forecast \hfill \href{https://github.com/alvxck/stock-forecast}{github.com/alvxck/stock-forecast}
+	\vspace{5pt}
+	\textcolor{imptextblack}{Stock Forecast} \hfill \href{https://github.com/alvxck/stock-forecast}{github.com/alvxck/stock-forecast}
 	
 	Python, FastAPI, Keras, NumPy, Pandas, Pytest, yFinance
 	
-	\begin{itemize}
-		\item Built a REST API for stock price estimates; integrated a process queue to ensure concurrent request integrity
+	\begin{itemize}[topsep=0pt]
+		\item Built a REST API for stock price estimates; integrated a process \textcolor{imptextblack}{queue} to ensure concurrent request integrity
 	\end{itemize}
 \end{adjustwidth}
 
